@@ -1,0 +1,65 @@
+.no-webp #intro-home { background-image: url(images/intro-home-01.jpg); }
+.webp #intro-home { background-image: url(images/intro-home-01.webp); }
+#intro-home { 
+  //background: url(images/intro-home-01-min.jpg) center center no-repeat;
+  position: relative;
+  .tel-g  { position: absolute; right: 0; top:27.5%; color: white; font-weight: bold; font-style: italic;
+    background-color: rgba($color-secundario, .75); padding: .35% .75% .1% 1.1%; border-radius: 2.5rem 0 0 2.5rem;
+    font-size: /*2rem*/ calc(1rem + ((1vw - 2px) * 1.6231));
+  }
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 90vh;
+  padding-bottom: 3%;
+  h1 {
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px #000;
+    opacity: 0.92;
+    font-size: calc(3rem + ((1vw - 2px) * 1.9231));
+    span { display: block; font-family: $fuente-normal; font-weight: 300; letter-spacing: -0.05em; font-size: calc(1.25rem + ((1vw - 3px) * 1.9231)); }
+    
+      @media (min-width:992px) {
+        
+      }
+  }
+
+}
+
+.no-webp #intro-nosotros { background-image: url(images/exterior-nonabe-fon-01.jpg); }
+.webp #intro-nosotros { background-image: url(images/exterior-nonabe-fon-01.webp); }
+#intro-nosotros {
+  h2 {font-size: calc(1.5rem + ((1vw - 2px) * 1.9231)); }
+  //background: #2a2b31 url(../../uploads/diseno/exterior-nonabe-fon-01-min.jpg) right center no-repeat;
+  background-color: #2a2b31;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .txt-intro-nosotros {
+    @include h-gradient(#2a2b30, #2a2b30, 1, .5)
+  }
+
+}
+#iconos-home {
+  svg {
+    color: $color-principal;
+    display: block;
+    margin: 0 auto;
+    /*font-size: 3.938rem;*/
+  }
+  span { display: block; margin-top: 1rem; font-size: 1.1rem; color: $color-principal; font-weight: 600;
+        small { color: $color-base; display: block; font-weight: normal; font-size: 1rem;}
+      }
+}
+
+.cat-home { 
+  position: relative; margin-bottom: 2rem; display: flex; justify-content: center;
+  h2 { 
+    position: absolute; bottom: 1rem; text-align: center; color: white; font-size: 3rem;
+  }
+  a { color: white; text-decoration: none;}
+}

@@ -1,0 +1,70 @@
+/*Bootstrap*/
+.container {
+  max-width: 100%;
+}
+.btn {
+  border-width: 3px; text-decoration: none;
+}
+.btn-lg {
+  font-weight: bold;
+}
+.btn-primary {
+  background-color: $color-principal;
+  border-color: $color-principal;
+}
+.btn-primary:hover, .btn-primary.focus, .btn-primary:focus {
+  background-color: lighten($color-principal, 10%);
+  border-color: lighten($color-principal, 10%);
+}
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 .2rem rgba($color-principal,.5) !important;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: lighten($color-principal, 20%);
+  border-color: lighten($color-principal, 20%);
+}
+.btn-danger {
+  background-color: $color-secundario;
+  border-color: darken($color-secundario,10%);
+}
+
+@media only screen and (min-width: 1680px) {
+  .container {
+    max-width: 80%;
+  }
+}
+.lead {
+  font-size: 1.1rem;
+  @media only screen and (min-width: 992px) {
+    font-size: 1.25rem;
+
+  }
+
+
+}
+
+.jumbotron {
+    margin: 0;
+    border-radius: 0;
+    background-color: $gris-claro;
+      //h2 { font-size: calc(28px + .2vw)};
+      @media (min-width: 576px)
+        {
+          padding-top: 8rem;
+          padding-bottom: 8rem;
+        }
+  }
+  .jumbotron {
+    margin: 0;
+    border-radius: 0;
+    background-color: $gris-claro;
+      //h2 { font-size: calc(28px + .2vw)};
+      @media (min-width: 576px)
+        {
+          padding-top: 8rem;
+          padding-bottom: 8rem;
+        }
+  }
+
+  //.single-product main .container { max-width: 1200px;}

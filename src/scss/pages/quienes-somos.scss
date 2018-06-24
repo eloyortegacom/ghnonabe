@@ -1,0 +1,9 @@
+.quienes-somos {
+    background-image: url(images/quienes-somos-fon-03.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10%; padding-bottom: 10%;
+}
+.no-webp .quienes-somos { background-image: url(images/quienes-somos-fon-03.jpg); }
+.webp .quienes-somos { background-image: url(images/quienes-somos-fon-03.webp); }

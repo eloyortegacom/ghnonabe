@@ -1,0 +1,15 @@
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
+font-size:2rem;
+    }
+.term-description { max-width: 50rem;}    
+.woocommerce .woocommerce-breadcrumb { margin-top: 2rem;}
+.woocommerce ul.products li.product .price, .woocommerce div.product p.price, .woocommerce div.product span.price {
+    color: $color-secundario;
+    font-weight: bold;
+    font-size: 1.3rem; letter-spacing: -0.02em;
+}
+
+//.product.type-product { max-width: 1200px; margin-right: auto; margin-left: auto;}
+/*Forms*/
+.woocommerce-input-wrapper { width: 100%}

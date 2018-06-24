@@ -1,0 +1,30 @@
+/*!
+Theme Name: eoBS4nonabe
+Theme URI: https://www.gasteizhoy.com/
+Author: Eloy Ortega y Gasteizhoy
+Author URI: https://www.gasteizhoy.com/
+Description: Theme diseñado y desarrollado por Eloy Ortega para Gasteiz Hoy sobre Bootstrap 4
+Version: 1
+License: 
+License URI: 
+Tags: Boostrap 4
+Text Domain: eoBS4nonabe
+*/
+@import "settings/variables.scss";
+@import "lib/mixins.scss";
+@import "base/html.scss";
+@import "base/bs_modif.scss";
+@import "base/eo.scss";
+@import "layout/header.scss";
+@import "layout/main.scss";
+@import "layout/sidebar.scss";
+@import "layout/footer.scss";
+@import "pages/portada.scss";
+@import "woocommerce/woocommerce.scss";
+
+
+
+
+
+
+

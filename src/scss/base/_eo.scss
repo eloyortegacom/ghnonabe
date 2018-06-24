@@ -1,0 +1,33 @@
+/*customizar diseño*/
+.logo-n-peq { width: 70px;}
+
+/*eo helper*/
+.txt-dorado { color: $dorado;}
+.fon-blanco { background-color: white}
+.fon-gris-oscuro { background-color: $gris-oscuro; color: white}
+p:empty { display: none; }
+.sincss { display: none;}
+.caja-texto-fon-blanco { 
+    background-color: rgba(white, .95);
+    padding: 40px;
+  }
+  
+
+/*.gallery-columns-3 .gallery-item, .rl-gallery-link {
+
+    max-width: 100%; height: auto;
+    
+    }*/
+
+/*Plugin galerías*/
+.gallery img { max-width: 100%; height: auto;}
+
+/*forms*/
+button, input, select, textarea { border: 1px solid #bbb; padding: 8px 8px 6px; font-weight: 700;}
+input[type='text'], textarea { width: 100%;}
+.wpcf7-submit {
+    background-color: $color-principal; border-color: $color-principal;
+    color: white; padding: 0.5rem 1rem;
+    cursor: pointer;
+    &:hover { background-color: lighten($color-principal,10%); border-color: lighten($color-principal,10%)}
+}

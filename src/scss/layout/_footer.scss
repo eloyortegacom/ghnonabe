@@ -1,0 +1,74 @@
+/*********************FOOTER******************************/
+footer { background-color: $color-principal; color: white; padding-top: 2em; padding-bottom: 5em; }
+.logo-pie { margin-top: -1rem}
+#socialLinks {
+  margin-top: 12px;
+  svg {    
+    background: rgba(white, 0.1);
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid rgba(white, 0.6);
+    text-align: center;
+    width: 34px;
+    height: 34px;
+    padding: 7px;
+    &:hover {
+      background: rgba(white, 0);
+    }
+  }
+}
+.txt-pie { color: $dorado-02; font-size: 0.9rem;}
+.menu-pie { 
+  @media (min-width: 992px) {
+  flex-direction: row;
+  li a { padding: 0.5rem; }
+}
+  li a { color: rgba(white, 0.8); text-decoration: underline; font-size: 0.8rem;}
+  li a:hover { color: white}
+}
+#firma_gh01 {
+  //float: right !important;
+  padding-right: 0.5rem;
+  a {
+    background: url("images/firma-gh-min.png") no-repeat scroll 0 0 transparent;
+    //float: right;
+    display: block;
+    width: 37px; height: 51px;    
+    &:hover {
+      background-position: 0 -51px;
+    }
+  }
+}
+
+#firma_eo04 {
+  //float: right !important;
+  padding-top: 0.5rem;
+  padding-right: 0;
+  a {
+    background: url("images/firma-eo-03-min.png") no-repeat scroll 0 0 transparent;
+    //float: right;
+    display: block;
+    height: 30px;
+    width: 54px;
+    &:hover {
+      background-position: 0 -30px;
+    }
+  }
+}
+
+.btn.back-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 2;
+  background: rgba(black, 0.3);
+  border: 0;
+  &:focus, &:hover {
+    background: rgba(black, 0.5);
+    border: 0;
+  }
+}
+
+/******************Fin FOOTER***************************/

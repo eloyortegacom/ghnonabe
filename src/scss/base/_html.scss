@@ -1,0 +1,28 @@
+body {
+  font-family: $fuente-normal;
+  padding-bottom: 0
+}
+
+main { 
+  width: 100%;
+  padding-top: 7rem;
+  @media (min-width: 1280px) {
+  padding-top: 10rem; 
+  }
+}
+.home main { padding-top: 0;}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { margin-bottom: 1rem;}
+h1, .h1, h2, .h2 { font-family: $fuente-especial; }
+h1, h2, h3, .h1, .h2, .h3 {
+  font-weight: normal;
+  color: $color-principal;
+  line-height: 1;
+}
+a, a:not([href]):not([tabindex]) {
+  outline: 0 none;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  color: $link-azul;
+  cursor: pointer; text-decoration: underline;
+}
+main a { text-decoration: underline}

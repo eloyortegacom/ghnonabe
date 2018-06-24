@@ -1,0 +1,139 @@
+@media (min-width: 1280px) {
+  #cabecera {
+    &.cab-scroll-arriba .logo-p,
+    &.cab-scroll-abajo .logo-g {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1279px) {
+  #cabecera .logo-g {
+    display: none;
+  }
+}
+
+
+
+#cabecera { display: flex;
+  //background: white url(images/cab-int-fon.jpg) center center no-repeat;
+  //background-size: cover;
+  
+  .navbar-brand {
+    max-width: /*10.5em*/9rem;
+    @media (min-width: 381px) {
+      max-width: 9rem;
+    }
+  }
+  
+  .top-header {
+    position: absolute; top:0; right: 0; width: 100%;
+    @media (min-width: 992px) { position: relative; width: auto}
+    .top-menu {
+      padding-right: 1em;
+      li { padding: 0 0.5rem;}
+          a { color: $color-secundario; font-weight: normal; font-size: 0.8em; }
+          .a-mi-cuenta {
+            a {padding:10px 8px !important;}
+            &:before {
+              font-family: FontAwesome;
+              content: "\f007";
+              color: darken($color-secundario, 10%);
+              font-size: 16px;
+              margin-top: 10px;
+              font-style: normal;
+              font-weight: 400;
+              padding-right: 2px;
+              vertical-align: bottom;
+            }
+            &:hover {
+              text-decoration: none;
+            }
+          }
+      }
+      #menu-top-menu li.current-menu-item { background-color: rgba(black, .08)}
+    .telefono { 
+      display: none;
+      color: $color-secundario;
+      font-weight: 900; margin-right: 1em; font-size: 1.2em; font-style: italic; letter-spacing: -0.02em;
+      @media (min-width: 992px) {
+        display: block;
+      }
+      svg { color: darken($color-secundario, 10%)}
+    }
+}
+
+  #navbarCollapse {
+    background: $color-principal;  
+  }
+
+ ul.navbar-nav.menu-principal { 
+  //margin-right: 4em;
+      li a { 
+        color: white; padding: 10px 15px; font-weight: bold; text-decoration: none;
+        &:hover{ background-color:  lighten($color-principal, 8%)}
+      }
+      li.current-menu-item { background-color: lighten($color-principal, 15%)}
+    @media (min-width: 1440px) {
+      li a { font-size:1.1rem; }
+    }
+    @media (min-width:992px) {
+      li:first-child a { padding-left: 1.75em; }
+      li:last-child a { padding-right: 1.75em;}
+    }      
+  }
+  
+  /*background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);*/
+  .cabecera-int { 
+    width: 100%;
+    .page-header {
+      width: 100%;
+      h1 {color: white; text-shadow: 0 0 10px black; text-align: center; font-size: 3rem;}
+    }
+    
+  }
+  
+}
+.home #cabecera.cab-scroll-arriba .navbar-brand { 
+  @media (min-width: 381px) {max-width: 10.5em;}
+}
+/*.home*/ #cabecera {@include v-gradient(white, white, 1, 0)}
+
+.navbar-toggler { background-color: rgba($color-principal,.85); }
+.navbar-dark .navbar-toggler-icon { background: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") }
+
+/*Woocommerce header cart*/
+#nav-wrap .woocommerce-cart {
+  float: right;
+  padding: 15px 6px 15px 24px;
+}
+
+
+
+.cart-contents {
+  &:before {
+    font-family: WooCommerce;
+    content: "\e01d";
+    //color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 400;
+    padding-right: 2px;
+    vertical-align: bottom;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.cart-contents-count {
+  //color: #fff;
+  // background-color: #2ecc71;
+  font-weight: bold;
+  // border-radius: 10px;
+  line-height: 1;
+  //font-family: Arial, Helvetica, sans-serif;
+  vertical-align: top;
+  padding-right: 1em;
+}
